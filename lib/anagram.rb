@@ -15,7 +15,6 @@ class Anagram
     possible_anagrams.each do |words|
       possible_anagrams_letters = []
       possible_anagrams_letters << words.split("")
-      end 
     end 
   end 
   
