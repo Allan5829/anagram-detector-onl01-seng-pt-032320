@@ -8,17 +8,19 @@ class Anagram
   
   def match (array_of_words)
     base_word_letters = []
+    sorted_letters1 = []
     anagram_results = []
     
     base_word_letters << @base_word.split("")
-    base_word_letters.sort
+    sorted_letters1 = base_word_letters.sort
     
     array_of_words.each do |words|
 
       possible_anagrams_letters = []
+      sorted_letters2 = []
       possible_anagrams_letters << words.split("")
-      possible_anagrams_letters.sort
-      binding.pry
+      sorted_letters2 = possible_anagrams_letters.sort
+      #binding.pry
       if (base_word_letters == possible_anagrams_letters)
         anagram_results << words
       end 
