@@ -11,7 +11,7 @@ class Anagram
     
     base_word_letters << @base_word.split("")
     base_word_letters.flatten.sort
-    possible_anagrams = array_of_words.split(" ")
+    possible_anagrams = array_of_words.split(", ")
     
     possible_anagrams.each do |words|
       possible_anagrams_letters = []
