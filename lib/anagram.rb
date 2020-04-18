@@ -9,7 +9,7 @@ class Anagram
     anagram_results = []
     
     array_of_words.each do |words|
-      if (@base_word.split("").sort == array_of_words.split("").sort)
+      if @base_word.split("").sort == array_of_words.split("").sort
         anagram_results << words
       end 
     end 
