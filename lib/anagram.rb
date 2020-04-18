@@ -20,7 +20,7 @@ class Anagram
       sorted_letters2 = []
       possible_anagrams_letters << words.split("")
       sorted_letters2 = possible_anagrams_letters.sort
-      #binding.pry
+      binding.pry
       if (sorted_letters1 == sorted_letters2)
         anagram_results << words
       end 
