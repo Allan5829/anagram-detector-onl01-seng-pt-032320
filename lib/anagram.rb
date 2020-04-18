@@ -10,12 +10,18 @@ class Anagram
     anagram_results = []
     
     base_word_letters << @base_word.split("")
+    base_word_letters.flatten.sort
     possible_anagrams = array_of_words.split(" ")
     
     possible_anagrams.each do |words|
       possible_anagrams_letters = []
       possible_anagrams_letters << words.split("")
+      possible_anagrams_letters.flatten.sort
+      if (base_word_letters == possible_anagrams_letters)
+        anagram_results << words
+      end 
     end 
+    anagram_results
   end 
   
   
