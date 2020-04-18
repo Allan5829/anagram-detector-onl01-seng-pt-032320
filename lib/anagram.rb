@@ -12,14 +12,14 @@ class Anagram
     anagram_results = []
     
     base_word_letters << @base_word.split("")
-    sorted_letters1 = base_word_letters.sort{...}
+    sorted_letters1 = base_word_letters.sort {...}
     
     array_of_words.each do |words|
 
       possible_anagrams_letters = []
       sorted_letters2 = []
       possible_anagrams_letters << words.split("")
-      sorted_letters2 = possible_anagrams_letters.sort{...}
+      sorted_letters2 = possible_anagrams_letters.sort {...}
       binding.pry
       if (sorted_letters1 == sorted_letters2)
         anagram_results << words
