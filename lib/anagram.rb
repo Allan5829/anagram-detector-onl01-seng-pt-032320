@@ -12,8 +12,9 @@ class Anagram
     
     base_word_letters << @base_word.split("")
     base_word_letters.flatten.sort
-    binding.pry
+    
     array_of_words.each do |words|
+      binding.pry
       possible_anagrams_letters = []
       possible_anagrams_letters << words.split("")
       possible_anagrams_letters.flatten.sort
