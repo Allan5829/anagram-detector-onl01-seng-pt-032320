@@ -18,7 +18,7 @@ class Anagram
       possible_anagrams_letters = []
       possible_anagrams_letters << words.split("")
       possible_anagrams_letters.sort
-      #binding.pry
+      binding.pry
       if (base_word_letters == possible_anagrams_letters)
         anagram_results << words
       end 
